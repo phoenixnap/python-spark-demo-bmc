@@ -23,6 +23,17 @@ Demo script for provisioning Bare Metal Cloud servers via API. This script creat
 - [Bare Metal Cloud](https://bmc.phoenixnap.com) account
 - [Python 3](https://www.python.org/downloads/)
 
+## Creating a Bare Metal Cloud account
+
+1. Go to the [Bare Metal Cloud signup page](https://support.phoenixnap.com/wap-jpost3/bmcSignup).
+2. Follow the prompts to set up your account.
+3. Use your credentials to [log in to Bare Metal Cloud portal](https://bmc.phoenixnap.com).
+
+:arrow_forward: **Video tutorial:** [How to Create a Bare Metal Cloud Account](https://www.youtube.com/watch?v=RLRQOisEB-k)
+<br>
+
+:arrow_forward: **Video tutorial:** [Introduction to Bare Metal Cloud](https://www.youtube.com/watch?v=8TLsqgLDMN4)
+
 ## API Credentials
 
 You need valid Bare Metal Cloud API credentials to use this script. Follow these steps to obtain your API credentials:
