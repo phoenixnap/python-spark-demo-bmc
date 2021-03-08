@@ -1,35 +1,96 @@
-# DevOps Days Scripts
+<h1 align="center">
+  <br>
+  <a href="https://phoenixnap.com/bare-metal-cloud"><img src="https://user-images.githubusercontent.com/78744488/109779287-16da8600-7c06-11eb-81a1-97bf44983d33.png" alt="phoenixnap Bare Metal Cloud" width="300"></a>
+  <br>
+  DevOps Days Bare Metal Cloud Scripts
+  <br>
+</h1>
 
-The purpose of this repo is show a demo of provisioning servers through BMC API.
+<p align="center">
+Demo script for provisioning Bare Metal Cloud servers via API. This script creates a Spark cluster consisting of 3 Ubuntu servers (1 master node and 2 workers nodes).
+</p>
 
-This script provides a spark cluster of 3 Ubuntu servers (1 master node and 2 workers nodes).
+<p align="center">
+  <a href="https://phoenixnap.com/bare-metal-cloud">Bare Metal Cloud</a> •
+  <a href="https://developers.phoenixnap.com/docs/bmc/1/overview">API</a> •
+  <a href="https://developers.phoenixnap.com/">Developers Portal</a> •
+  <a href="http://phoenixnap.com/kb">Knowledge Base</a> •
+  <a href="https://developers.phoenixnap.com/support">Support</a>
+</p>
 
-To run the script you need a valid API credentials for https://api.phoenixnap.com/bmc/v0/
+## Requirements
 
-### Requirements
+- [Bare Metal Cloud](https://bmc.phoenixnap.com) account
+- [Python 3](https://www.python.org/downloads/)
 
-- Python 3 (https://www.python.org/downloads/)
+## API Credentials
 
-- Valid API credentials
+You need valid Bare Metal Cloud API credentials to use this script. Follow these steps to obtain your API credentials:
 
-### Setup
+1. [Log in to the Bare Metal Cloud portal](https://bmc.phoenixnap.com).
+2. On the left side menu, click on API Credentials.
+3. Click the Create Credentials button.
+4. Fill in the Name and Description fields, select the permissions scope and click Create.
+5. In the table, click on Actions and select View Credentials from the dropdown to view the Client ID and Client Secret.
+
+**Bare Metal Cloud Quick Start Guide**: [https://developers.phoenixnap.com/quick-start](https://developers.phoenixnap.com/quick-start)
+
+## Setup
 
 1. Download the repo ```git clone git@gitlab.com:phoenixnap/bare-metal-cloud/devops-days-scritps.git```
 
 2. Open the branch ```spark```
 
-3. Set your credentials in credentials.conf
+3. Set your credentials in ```credentials.conf```.
 
-4. Set default public key in server-settings.conf, you can get it with ```cat ~/.ssh/id_rsa.pub```
+4. Set default public key in ```server-settings.conf``` with this command: ```cat ~/.ssh/id_rsa.pub```.
 
-5. Execute the command ```python3 bmc-spark.py```
+5. To execute the script, run this command: ```python3 bmc-spark.py```
 
-### Script details
+## Script details
 
 ##### URL
-After prepare the infrastructure, software and check that the cluster is correctly setup, the script will be provide an URL to access to the master node UI
+Once the infrastructure and software are ready, the script will check if the cluster is set up properly. After that, you will get a URL to access the master node via web UI. 
 
+## Release
 
-### After the demo
+To release the servers, use the command: ```python3 bmc-spark.py -d0```.
 
-Please release the servers with the command ```python3 bmc-spark.py -d0```
+## Bare Metal Cloud community
+
+Become part of the Bare Metal Cloud community to get updates on new features, help us improve the platform, and engage with developers and other users.
+
+- Follow [@phoenixNAP on Twitter](https://twitter.com/phoenixnap)
+- Join the [official Slack channel](https://phoenixnap.slack.com)
+- Sign up for our [Developers Monthly newsletter](https://phoenixnap.com/developers-monthly-newsletter)
+
+### Resources
+
+- [Product page](https://phoenixnap.com/bare-metal-cloud)
+- [Instance pricing](https://phoenixnap.com/bare-metal-cloud/instances)
+- [YouTube tutorials](https://www.youtube.com/watch?v=8TLsqgLDMN4&list=PLWcrQnFWd54WwkHM0oPpR1BrAhxlsy1Rc&ab_channel=PhoenixNAPGlobalITServices)
+- [Developers Portal](https://developers.phoenixnap.com)
+- [Knowledge Base](https://phoenixnap.com/kb)
+- [Blog](https:/phoenixnap.com/blog)
+
+### Documentation
+
+- [API documentation](https://developers.phoenixnap.com/docs/bmc/1/overview)
+
+### Contact phoenixNAP
+
+Get in touch with us if you have questions or need help with Bare Metal Cloud.
+
+<p align="left">
+  <a href="https://twitter.com/phoenixNAP">Twitter</a> •
+  <a href="https://www.facebook.com/phoenixnap">Facebook</a> •
+  <a href="https://www.linkedin.com/company/phoenix-nap">LinkedIn</a> •
+  <a href="https://www.instagram.com/phoenixnap">Instagram</a> •
+  <a href="https://www.youtube.com/user/PhoenixNAPdatacenter">YouTube</a> •
+  <a href="https://developers.phoenixnap.com/support">Email</a> 
+</p>
+
+<p align="center">
+  <br>
+  <a href="https://phoenixnap.com/bare-metal-cloud"><img src="https://user-images.githubusercontent.com/78744488/109779474-47222480-7c06-11eb-8ed6-91e28af3a79c.jpg" alt="phoenixnap Bare Metal Cloud"></a>
+</p>
