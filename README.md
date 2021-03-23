@@ -48,15 +48,13 @@ You need valid Bare Metal Cloud API credentials to use this script. Follow these
 
 ## Setup
 
-1. Download the repo ```git clone git@gitlab.com:phoenixnap/bare-metal-cloud/devops-days-scritps.git```
+1. Execute the command: ```pip install -r requirements.txt```
 
-2. Open the branch ```spark```
+2. Set your credentials in ```credentials.conf```.
 
-3. Set your credentials in ```credentials.conf```.
+3. Set default public key in ```server-settings.conf``` with this command: ```cat ~/.ssh/id_rsa.pub```.
 
-4. Set default public key in ```server-settings.conf``` with this command: ```cat ~/.ssh/id_rsa.pub```.
-
-5. To execute the script, run this command: ```python3 bmc-spark.py```
+4. To execute the script, run this command: ```python3 bmc-spark.py```
 
 ## Script details
 
